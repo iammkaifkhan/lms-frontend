@@ -1,11 +1,8 @@
 import axios from 'axios';
 
-const BASE_URL = "https://lms-backend-wp2e.onrender.com/api/v1";
-
-
-const axiosInstance = axios.create();
-
-axiosInstance.defaults.baseURL = BASE_URL;
-axiosInstance.defaults.withCredentials = true;
+const axiosInstance = axios.create({
+    baseURL: "https://lms-backend-0a9e.onrender.com/api/v1",
+    withCredentials: true,
+});
 
 export default axiosInstance;
