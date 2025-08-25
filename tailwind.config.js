@@ -1,5 +1,6 @@
 // tailwind.config.js
 import lineClamp from '@tailwindcss/line-clamp'
+import daisyui from 'daisyui'
 
 export default {
   content: [
@@ -9,5 +10,8 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [lineClamp],
+  plugins: [lineClamp, daisyui],
+  daisyui: {
+    themes: ["dark"], // 👈 force dark mode only
+  },
 }

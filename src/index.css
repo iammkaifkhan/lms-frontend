@@ -1,8 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body{
-    margin: auto;
-    max-width: 1440px;
-    position: relative;
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-base-100 text-base-content antialiased; /* DaisyUI tokens */
+  margin: auto;
+  max-width: 1440px;
+  position: relative;
 }
