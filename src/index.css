@@ -1,13 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Ensure full height and responsiveness */
 html, body, #root {
   height: 100%;
+  width: 100%;
 }
 
+/* Use DaisyUI theme background + text colors */
 body {
-  @apply bg-base-100 text-base-content antialiased; /* DaisyUI tokens */
-  margin: auto;
-  max-width: 1440px;
-  position: relative;
+  @apply bg-base-100 text-base-content antialiased;
 }
+

@@ -12,6 +12,6 @@ export default {
   },
   plugins: [lineClamp, daisyui],
   daisyui: {
-    themes: ["dark"], // 👈 force dark mode only
+    themes: ["dark"], // 👈 lock to DaisyUI dark theme
   },
 }
